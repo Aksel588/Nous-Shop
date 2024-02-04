@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: fontThree;
+    src: url(../Font/fontThree);
+}
+
+@font-face {
+    font-family: fontFour;
+    src: url(../Font/fontFour);
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: fontFour;
+}
+
+@font-face {
+    font-family: fontOne;
+    src: url(../Font/fontOne);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.logo .text  {
+    width: 98px;
+    height: 48px;
+    background-color: black;
+    font-family: fontOne;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.logo .text a{
+    color: white;
+    transition: .7s;
+}
+
+.logo .text a:hover {
+    color: #EF6136;
+}
+
+.search {
+    width: 160px;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+}
+
+.logoInput input:hover {
+    border-bottom: solid 2px black;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.menu li a {
+    color: black;
+    transition: .7s;
+}
+
+
+.menu li a:hover {
+    color: #EF6136;
+}
+
+.box {
+    width: 1300px;
+    min-height: 500px;
+    margin: 0px auto;
+    padding: 0px 20px 20px 20px;
+}
+
+
+
+
+
+
+.shopAll {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.shopAll .shopAllText {
+    width: 240px;
+    height: auto;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+}
+
+.shopAllText-Bottom {
+    width: 160px;
+    height: 44px;
+    border: solid 3px #EF6136;
+    background-color: white;
+    color: #EF6136;
+    font-family: fontThree;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: .7s;
+    cursor: pointer;
+
+}
+
+.shopAll button:hover {
+    background-color: #EF6136;
+    color: white;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 350px;
+    border: solid 3px black;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: fontFour;
+}
+
+.menuFooter {
+    width: 190px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFooter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuFooter ul li a {
+    font-size: 20px;
+    color: #C2C2C2;
+}
+
+.subscribeDiv {
+    width: 340px;
+    height: 270px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscribeDiv div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.subscribeDiv p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.subscribeDiv input {
+    width: 250px;
+    height: 40px;
+    border: solid 2px white;
+    background-color: black;
+}
+
+.subscribeDiv input:hover {
+    border: solid 5px white;
+}
+
+.subscribeDiv button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: #EF6136;
+    font-size: 17px;
+    color: white;
+}
+
+
+
+.botLink {
+    width: 0;
+}
+
+
+.botButton {
+    min-width: 200px;
+    max-width: 340px;
+    height: 56px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    transition: .7s;
+    font-family: fontThree;
+}
+
+.botButton:hover{
+    color: black;
+    background-color: #EF6136;
+}
+
+.invalid-feedback,
+.empty-feedback {
+    display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+    display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+    display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+    border-color: #dc3545;
+}
+.container2{
+    display: flex;
+}
+
+.divContainer{
+    width: 600px;
+    border: solid 3px black;
+}

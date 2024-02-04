@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    height: 400px;
+    border: solid 3px black;
+    display: flex;
+    gap: 7px;
+    padding: 10px;
+}
+
+.aboutUsText {
+    width: 50%;
+    height: 100%;
+    border: solid 3px black;
+    padding: 25px;
+}
+
+.aboutUsImg {
+    width: 50%;
+    height: 100%;
+    border: solid 3px black;
+    padding: 25px;
+}
+
+.textArea {
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border: 4px dashed #EF6136;
+    font-size: 20px;
+}
+
+.aboutUsText form button {
+    margin: 30px auto;
+    color: #fff;
+    background: #16a085;
+    border: none;
+    width: 508px;
+    height: 35px;
+    border-radius: 4px;
+    border-bottom: 4px solid #117A60;
+    transition: all .2s ease;
+    outline: none;
+}
+
+.aboutUsImg form {
+    width: 100%;
+    height: 250px;
+    border: 4px dashed #EF6136;
+}
+
+.page {
+    margin: 1em auto;
+    max-width: 768px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+.box {
+    padding: 0.5em;
+    width: 100%;
+    margin: 0.5em;
+}
+
+.box-2 {
+    padding: 0.5em;
+    width: calc(100% / 2 - 1em);
+}
+
+.options label,
+.options input {
+    width: 4em;
+    padding: 0.5em 1em;
+}
+
+.btn {
+    background: white;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    margin: 0.8em 0.3em;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+img {
+    max-width: 100%;
+}

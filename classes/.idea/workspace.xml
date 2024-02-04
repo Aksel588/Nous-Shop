@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="dc6a9496-d5b7-4bcd-a3c4-eae59c92c004" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/aboutUs-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/admin-server/aboutUsEdit-server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/admin-server/menEdit-server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/headerAdmin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/men-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/webSite-server.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../admin/women-edit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pay.contr.classes.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/aboutUs-edit.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/admin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/men-product.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/pay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/profile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/showAll.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../css/women-product.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../includes/pay.inc.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../js/error404.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/men-product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/not-error404.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/pay.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/showAll.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../php/women-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/men1.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../Images/product/showAll/men1.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/men7.webp" beforeDir="false" afterPath="$PROJECT_DIR$/../Images/product/showAll/men7.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women10.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women11.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women12.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women3.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women4.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women5.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women7.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women8.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Images/product/showAll/women9.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dbh.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/dbh.classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login-contr.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login-contr.classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/aboutUs.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/aboutUs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/accountNew.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/accountNew.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../includes/login.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/../includes/login.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../includes/signup.inc.php" beforeDir="false" afterPath="$PROJECT_DIR$/../includes/signup.inc.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/aboutUs.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/aboutUs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/accountNew.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/accountNew.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../php/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/../php/product.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/usr/local/Cellar/php/8.2.12/bin/php" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2aPaHnmKWJvtaFUllV5nHDOQJiQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dc6a9496-d5b7-4bcd-a3c4-eae59c92c004" name="Changes" comment="" />
+      <created>1704222583071</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1704222583071</updated>
+      <workItem from="1704222584796" duration="8000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

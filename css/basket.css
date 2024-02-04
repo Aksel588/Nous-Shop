@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: fontThree;
+    src: url(../Font/fontThree);
+}
+
+@font-face {
+    font-family: fontFour;
+    src: url(../Font/fontFour);
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: fontFour;
+}
+
+@font-face {
+    font-family: fontOne;
+    src: url(../Font/fontOne);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo .text {
+    width: 98px;
+    height: 48px;
+    background-color: black;
+    font-family: fontOne;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.logo .text a {
+    color: white;
+    transition: .7s;
+}
+
+.logo .text a:hover {
+    color: #EF6136;
+}
+
+.search {
+    width: 160px;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+}
+
+.logoInput input:hover {
+    border-bottom: solid 2px black;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.menu li a {
+    color: black;
+    transition: .7s;
+}
+
+
+.menu li a:hover {
+    color: #EF6136;
+}
+
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 20px 70px 0px 70px;
+}
+
+.text {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: fontThree;
+}
+.container hr {
+    width: 100%;
+    border: solid 2px #EF6136;
+    border-radius: 30px ;
+    margin: 20px auto;
+}
+.text p {
+    font-size: 50px;
+    color: #EF6136;
+}
+
+.cardDiv {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+}
+
+table{
+    width: 1000px;
+    min-height: 240px;
+    font-family: fontFour;
+    font-size: 17px;
+    text-align: center;
+    margin: 10px auto;
+}
+table tr th{
+    height: 70px;
+    font-size: 22px;
+    font-family: fontThree;
+}
+
+table tr td,th {
+    height: 40px;
+    border: solid 1px black;
+    padding: 3px;
+}
+
+.deleteButton{
+    width: 50px;
+    height: 50px;
+    border: none;
+    color: #EF6136;
+    font-size: 22px;
+    cursor: pointer;
+    background: #e5e1e1;
+    border-radius: 10px;
+}
+.delete{
+    width: 60px;
+}
+
+footer {
+    width: 100%;
+    height: 350px;
+    border: solid 3px black;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    font-family: fontFour;
+}
+
+.menuFooter {
+    width: 190px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuFooter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menuFooter ul li a {
+    font-size: 20px;
+    color: #C2C2C2;
+}
+
+.subscribeDiv {
+    width: 340px;
+    height: 270px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.subscribeDiv div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
+}
+
+.subscribeDiv p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    margin-top: 17px;
+}
+
+.subscribeDiv input {
+    width: 250px;
+    height: 40px;
+    border: solid 2px white;
+    background-color: black;
+}
+
+.subscribeDiv input:hover {
+    border: solid 5px white;
+}
+
+.subscribeDiv button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: #EF6136;
+    font-size: 17px;
+    color: white;
+}
