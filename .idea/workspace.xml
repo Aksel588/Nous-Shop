@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f0f20c5-e04c-4c31-933e-8763afac7cca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/showAll.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/showAll.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/basket.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/showAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/showAll.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/profile.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +54,7 @@
       <workItem from="1707077022862" duration="10000" />
       <workItem from="1707135380181" duration="292000" />
       <workItem from="1707248323360" duration="587000" />
-      <workItem from="1707333053084" duration="349000" />
+      <workItem from="1707333053084" duration="628000" />
     </task>
     <servers />
   </component>

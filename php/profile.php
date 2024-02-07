@@ -19,17 +19,17 @@ if ($_SESSION["userid"] === "11" || $_SESSION["useruid"] === "Axel886" || $_SESS
 
 <header>
     <li>
-        <a href="/myNewWebSite/index.php">Nous</a>
+        <a href="/Nous-Shop/index.php">Nous</a>
     </li>
     <li>
-        <a href="/myNewWebSite/admin/women-edit.php">Women</a>
+        <a href="/Nous-Shop/admin/women-edit.php">Women</a>
     </li>
     <li>
-        <a href="/myNewWebSite/admin/men-edit.php">Men</a>
+        <a href="/Nous-Shop/admin/men-edit.php">Men</a>
     </li>
 
     <li>
-        <a href="/myNewWebSite/admin/userProfile-edit.php">User profiles</a>
+        <a href="/Nous-Shop/admin/userProfile-edit.php">User profiles</a>
     </li>
 </header>
 
