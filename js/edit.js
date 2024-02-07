@@ -5,7 +5,7 @@ $(".editWomen").click(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "/myNewWebSite/admin/admin-server/womenEdit-server.php",
+        url: "/Nous-Shop/admin/admin-server/womenEdit-server.php",
         data: {id: productId},
         success: function (response) {
             console.log(response);
@@ -21,7 +21,7 @@ $(".editMen").click(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "/myNewWebSite/admin/admin-server/menEdit-edit-server.php",
+        url: "/Nous-Shop/admin/admin-server/menEdit-edit-server.php",
         data: {id: productId},
         success: function (response) {
             console.log(response);
@@ -41,7 +41,7 @@ $(".editUser").click(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "/myNewWebSite/admin/admin-server/userProfiles-delete-server.php",
+        url: "/Nous-Shop/admin/admin-server/userProfiles-delete-server.php",
         data: {id: userId},
         success: function (response) {
             console.log(response);

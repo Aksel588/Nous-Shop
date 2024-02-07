@@ -15,7 +15,7 @@ $(".cart").click(function (e) {
 
     $.ajax({
         type: "POST",
-        url: "/myNewWebSite/php/product-server.php",
+        url: "/Nous-Shop/php/product-server.php",
         data: {
             name: productName,
             company: productCompany,
@@ -41,7 +41,7 @@ $(".deleteButton").click(function () {
 
     $.ajax({
         type: "POST",
-        url: "/myNewWebSite/php/product-delete-server.php",
+        url: "/Nous-Shop/php/product-delete-server.php",
         data: {delete: deleteData},
         success: function (response) {
             console.log(response);

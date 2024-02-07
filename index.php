@@ -19,7 +19,7 @@ $products = getProducts();
 
 <body>
 <?php
-include "../myNewWebSite/php/header.php";
+include "../Nous-Shop/php/header.php";
 ?>
 
 <div class="box">
