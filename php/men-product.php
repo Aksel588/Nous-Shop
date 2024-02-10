@@ -33,7 +33,7 @@ include "header.php";
     <div class="filter">
         <div class="filterFirstDiv">
             <div class="menSearch">
-                <input type="text" class="menSearch" name="menSearch" placeholder="Search....">
+                <input type="text" class="menSearch" id="menSearch"  name="menSearch" placeholder="Search....">
             </div>
             <div class="menSize">
                 <select name="" id="menSize">
@@ -53,16 +53,8 @@ include "header.php";
 
             <div class="buttonClick">
                 <button class="buttonOne" id="buttonOne">
-                    <i class="fa-solid fa-arrow-down"></i>
+                    <p>Go</p>
                 </button>
-                <button class="buttonTwo">
-                    <i class="fa-solid fa-arrow-up"></i>
-                </button>
-            </div>
-        </div>
-        <div class="filterSecondDiv">
-            <div class="color">
-                <input type="text">
             </div>
         </div>
     </div>
@@ -70,7 +62,7 @@ include "header.php";
     <div class="projectClub" id="projectClub">
 
         <?php foreach ($products as $product) : ?>
-            <div class="el-wrapper">
+            <div class="el-wrapper" id="el-wrapper">
                 <div class="box-up">
                     <img class="img" src="../Images/product/men/<?php echo $product['images']; ?>" alt="">
                     <div class="img-info">
@@ -104,7 +96,6 @@ include "header.php";
     </div>
 </div>
 <div class="more">
-    <!--    <button class="load-more">Load More</button>-->
     <button class="load-more">
         <p>More</p>
     </button>
@@ -115,7 +106,7 @@ include "header.php";
 include "footer.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="../js/product.js"></script>
-<script src="../js/script.js"></script>
+<script src="../js/men.js"></script>
+
 </body>
 </html>

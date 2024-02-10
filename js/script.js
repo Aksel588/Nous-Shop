@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     var elWrapper = document.querySelectorAll(".el-wrapper");
     var btn = document.querySelector(".load-more");
-    var currentImg = 15;
+    var currentImg = 10;
 
     function toggleImages(start, end, displayValue) {
         for (let i = start; i < end; i++) {
@@ -25,16 +25,4 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-$(".buttonOne, .buttonTwo").on("click", function () {
-    var currentDisplay = $(".filterSecondDiv").css("display");
 
-    if (currentDisplay == "block") {
-        $(".filterSecondDiv").css("display", "none");
-        $(".buttonTwo").css("display", "none");
-        $(".buttonOne").css("display", "block");
-    } else {
-        $(".filterSecondDiv").css("display", "block");
-        $(".buttonTwo").css("display", "block");
-        $(".buttonOne").css("display", "none");
-    }
-});

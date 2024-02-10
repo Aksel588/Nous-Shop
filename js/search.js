@@ -51,4 +51,20 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('#menSearch').on('input', function () {
+        var menSearch = $(this).val();
+        $.ajax({
+            type: 'POST',
+            url: "men-search.php", // Update the URL to match the correct path
+            data: {search: menSearch},
+            dataType: 'html',
+            success: function (response) {
+                $('#projectClub').html(response); // Update the target element to replace the search results
+            },
+            error: function (error) {
+                console.error('Ajax request failed:', error);
+            }
+        });
+    });
 });
