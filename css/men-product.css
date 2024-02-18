@@ -194,8 +194,7 @@ header {
 .content {
     width: 100%;
     height: auto;
-    /*border: solid 3px black;*/
-    /*display: none;*/
+
 }
 
 .projectClub {
@@ -212,7 +211,7 @@ header {
     padding: 15px;
     margin: 15px auto;
     background-color: #fff;
-    display: none;
+    /*display: none;*/
 }
 
 @media (max-width: 991px) {

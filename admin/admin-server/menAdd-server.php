@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Use prepared statement to prevent SQL injection
-    $query = "INSERT INTO `men` (`id`,`name`, `images`, `price`, `size`, `company`) VALUES (NULL, ?, ?, ?, ?, ?)";
+    $query = "INSERT INTO `men` (`id`,`name`, `images`, `price`, `sizeMen`, `company`) VALUES (NULL, ?, ?, ?, ?, ?)";
     $statement = $connection->prepare($query);
 
     // Bind parameters

@@ -5,12 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f0f20c5-e04c-4c31-933e-8763afac7cca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/php/men-search.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/GenderProduct/showAll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/GenderProduct/women.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/search-server/men-size.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/search-server/women-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/men-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/men-product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/women-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/women-product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/men.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/men.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/search.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/men-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/men-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/men-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/men-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/showAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/showAll.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/women-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/women-product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +28,18 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/js/women.js" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -31,6 +49,9 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2butu3HtMFre9ckfxYcQF4hROiu" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,6 +69,12 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/php/search-server" />
+      <recent name="$PROJECT_DIR$/js/GenderProduct" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,7 +86,12 @@
       <workItem from="1707077022862" duration="10000" />
       <workItem from="1707135380181" duration="292000" />
       <workItem from="1707248323360" duration="587000" />
-      <workItem from="1707333053084" duration="5932000" />
+      <workItem from="1707333053084" duration="14983000" />
+      <workItem from="1708018716381" duration="1473000" />
+      <workItem from="1708084713074" duration="2026000" />
+      <workItem from="1708089583780" duration="1612000" />
+      <workItem from="1708184109304" duration="426000" />
+      <workItem from="1708184611845" duration="1042000" />
     </task>
     <servers />
   </component>

@@ -67,7 +67,7 @@ if (isset($_POST['search'])) {
                 '<td>' . $user['name'] . '</td>' .
                 '<td>' . $user['images'] . '</td>' .
                 '<td>' . $user['price'] . '</td>' .
-                '<td>' . $user['size'] . '</td>' .
+                '<td>' . $user['sizeMen'] . '</td>' .
                 '<td>' . $user['company'] . '</td>' .
                 '<td>' .
                 '<a class="editUser" data-users-id="' . $user['id'] . '" href="#">' .
@@ -133,7 +133,7 @@ if (isset($_POST['search'])) {
                 '<td>' . $user['name'] . '</td>' .
                 '<td>' . $user['images'] . '</td>' .
                 '<td>' . $user['price'] . '</td>' .
-                '<td>' . $user['size'] . '</td>' .
+                '<td>' . $user['sizeMen'] . '</td>' .
                 '<td>' . $user['company'] . '</td>' .
                 '<td>' .
                 '<a class="editUser" data-users-id="' . $user['id'] . '" href="#">' .

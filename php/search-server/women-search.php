@@ -1,4 +1,5 @@
 <?php
+
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -13,19 +14,19 @@ if ($connection->connect_error) {
 if (isset($_POST['search'])) {
     $menSearch = '%' . $_POST['search'] . '%';
 
-    $query = "SELECT * FROM men WHERE name LIKE ?";
+    $query = "SELECT * FROM women WHERE name LIKE ?";
     $stmt = $connection->prepare($query);
     $stmt->bind_param("s", $menSearch);
     $stmt->execute();
     $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-//        echo "hello";
+        echo "hello";
         while ($product = $result->fetch_assoc()) {
             echo '
             <div class="el-wrapper" id="el-wrapper">
                 <div class="box-up">
-                    <img class="img" src="../Images/product/men/' . $product['images'] . '" alt="">
+                    <img class="img" src="../Images/product/women/' . $product['images'] . '" alt="">
                     <div class="img-info">
                         <div class="info-inner">
                             <span class="p-name">' . $product['name'] . '</span>
@@ -57,7 +58,7 @@ if (isset($_POST['search'])) {
     }
     $stmt->close();
 } else {
-    $query = "SELECT * FROM men";
+    $query = "SELECT * FROM women";
     $result = $connection->query($query);
 
     if ($result->num_rows > 0) {
@@ -65,7 +66,7 @@ if (isset($_POST['search'])) {
             echo '
             <div class="el-wrapper" id="el-wrapper">
                 <div class="box-up">
-                    <img class="img" src="../Images/product/men/' . $product['images'] . '" alt="">
+                    <img class="img" src="../Images/product/women/' . $product['images'] . '" alt="">
                     <div class="img-info">
                         <div class="info-inner">
                             <span class="p-name">' . $product['name'] . '</span>
@@ -97,4 +98,4 @@ if (isset($_POST['search'])) {
 }
 
 $connection->close();
-?>
+

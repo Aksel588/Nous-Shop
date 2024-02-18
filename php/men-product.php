@@ -2,7 +2,7 @@
 session_start();
 include "product.php";
 $products = men();
-include "product-delete-server.php"
+//include "product-delete-server.php"
 ?>
 <!doctype html>
 <html lang="en">
@@ -36,12 +36,12 @@ include "header.php";
                 <input type="text" class="menSearch" id="menSearch"  name="menSearch" placeholder="Search....">
             </div>
             <div class="menSize">
-                <select name="" id="menSize">
-                    <option value="">Select your size</option>
-                    <option value="">XL</option>
-                    <option value="">S</option>
-                    <option value="">ML</option>
-                    <option value="">XXL</option>
+                <select name="size" id="menSize">
+                    <option value="None">Select your size</option>
+                    <option value="XL">XL</option>
+                    <option value="S">S</option>
+                    <option value="ML">ML</option>
+                    <option value="XXL">XXL</option>
                 </select>
             </div>
             <div class="menPrice">
@@ -70,7 +70,7 @@ include "header.php";
                             <span class="p-name"><?php echo $product['name']; ?></span>
                             <span class="p-company"><?php echo $product['company']; ?></span>
                         </div>
-                        <div class="a-size">Available sizes: <span class="size"><?php echo $product['size']; ?></span>
+                        <div class="a-size">Available sizes: <span class="size"><?php echo $product['sizeMen']; ?></span>
                         </div>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ include "header.php";
                     <a class="cart"
                        data-product-name="<?php echo $product['name']; ?>"
                        data-product-company-name="<?php echo $product['company']; ?>"
-                       data-product-size="<?php echo $product['size']; ?>"
+                       data-product-size="<?php echo $product['sizeMen']; ?>"
                        data-product-price="<?php echo $product['price']; ?>">
                         <span class="price"><?php echo $product['price'] . "$" ?></span>
                         <span class="add-to-cart">
@@ -106,7 +106,7 @@ include "header.php";
 include "footer.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="../js/men.js"></script>
+<script src="../js/GenderProduct/men.js"></script>
 
 </body>
 </html>

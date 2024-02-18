@@ -28,6 +28,35 @@ include "header.php";
 
 <div class="content">
 
+    <div class="filter">
+        <div class="filterFirstDiv">
+            <div class="womenSearch">
+                <input type="text" class="womenSearch" id="womenSearch"  name="womenSearch" placeholder="Search....">
+            </div>
+            <div class="womenSize">
+                <select name="" id="womenSize">
+                    <option value="">Select your size</option>
+                    <option value="">XL</option>
+                    <option value="">S</option>
+                    <option value="">ML</option>
+                    <option value="">XXL</option>
+                </select>
+            </div>
+            <div class="womenPrice">
+                <input type="number" placeholder="Min" min="0"
+                       max="100000">
+                <input type="number" placeholder="Max" min="0"
+                       max="100000">
+            </div>
+
+            <div class="buttonClick">
+                <button class="buttonOne" id="buttonOne">
+                    <p>Go</p>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <div class="projectClub" id="projectClub">
 
         <?php foreach ($products as $product) : ?>
@@ -74,7 +103,6 @@ include "header.php";
 include "footer.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="../js/product.js"></script>
-<script src="../js/script.js"></script>
+<script src="../js/GenderProduct/women.js"></script>
 </body>
 </html>
