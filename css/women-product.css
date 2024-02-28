@@ -89,11 +89,13 @@ header {
 .filter {
     width: 100%;
     height: auto;
-    border: solid 3px black;
+    /*border: solid 3px black;*/
     padding: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+    border-radius: 20px;
+    background: #E7E7E7;
 }
 
 .filterFirstDiv {
@@ -206,7 +208,7 @@ header {
     padding: 15px;
     margin: 15px auto;
     background-color: #fff;
-    display: none;
+    /*display: none;*/
 }
 
 .el-wrapper {

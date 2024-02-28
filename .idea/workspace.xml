@@ -5,19 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f0f20c5-e04c-4c31-933e-8763afac7cca" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/js/GenderProduct/showAll.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/GenderProduct/women.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/search-server/men-size.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/search-server/women-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-server/womenAdd-server.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-server/womenAdd-server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/admin-server/womenProduct-server.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-server/womenProduct-server.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/women-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/women-edit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/dbh.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/men-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/men-product.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/women-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/women-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/men.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/men.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/search.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/search.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/GenderProduct/men.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/men.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/GenderProduct/women.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/women.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/basket.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/men-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/men-product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/men-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/men-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/showAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/showAll.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/search-server/men-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/men-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/search-server/women-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/women-search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/women-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/women-product.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,6 +93,10 @@
       <workItem from="1708089583780" duration="1612000" />
       <workItem from="1708184109304" duration="426000" />
       <workItem from="1708184611845" duration="1042000" />
+      <workItem from="1708198485834" duration="13783000" />
+      <workItem from="1708716969175" duration="2354000" />
+      <workItem from="1708946951031" duration="101000" />
+      <workItem from="1708947085510" duration="7117000" />
     </task>
     <servers />
   </component>

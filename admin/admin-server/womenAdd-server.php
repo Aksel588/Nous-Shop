@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         die("Connection failed: " . $connection->connect_error);
     }
 
-    $query = "INSERT INTO `women` (`id`,`name`, `images`, `price`, `size`, `company`) VALUES (NULL, ?, ?, ?, ?, ?)";
+    $query = "INSERT INTO `women` (`id`,`name`, `images`, `price`, `sizeWomen`, `company`) VALUES (NULL, ?, ?, ?, ?, ?)";
     $statement = $connection->prepare($query);
 
     $statement->bind_param("ssdss", $name, $img, $num, $size, $com);

@@ -211,7 +211,7 @@ include "headerAdmin.php";
             <td><?php echo $product['name']; ?></td>
             <td><?php echo $product['images']; ?></td>
             <td><?php echo $product['price']?>$</td>
-            <td><?php echo $product['size']; ?></td>
+            <td><?php echo $product['sizeWomen']; ?></td>
             <td><?php echo $product['company']; ?></td>
             <td>
                 <a class="editWomen" data-product-id="<?php echo $product['id']; ?>" href="#">

@@ -28,25 +28,26 @@ include "header.php";
 
 <div class="content">
 
+
     <div class="filter">
         <div class="filterFirstDiv">
             <div class="womenSearch">
-                <input type="text" class="womenSearch" id="womenSearch"  name="womenSearch" placeholder="Search....">
+                <input type="text" class="menSearch" id="womenSearch"  name="womenSearch" placeholder="Search....">
             </div>
-            <div class="womenSize">
-                <select name="" id="womenSize">
-                    <option value="">Select your size</option>
-                    <option value="">XL</option>
-                    <option value="">S</option>
-                    <option value="">ML</option>
-                    <option value="">XXL</option>
+            <div class="menSize">
+                <select name="size" id="womenSize">
+                    <option value="None">Select your size</option>
+                    <option value="XL">XL</option>
+                    <option value="S">S</option>
+                    <option value="ML">ML</option>
+                    <option value="XXL">XXL</option>
                 </select>
             </div>
             <div class="womenPrice">
                 <input type="number" placeholder="Min" min="0"
-                       max="100000">
+                       max="100000" id="womenMin">
                 <input type="number" placeholder="Max" min="0"
-                       max="100000">
+                       max="100000" id="womenMax">
             </div>
 
             <div class="buttonClick">
@@ -68,7 +69,7 @@ include "header.php";
                             <span class="p-name"><?php echo $product['name']; ?></span>
                             <span class="p-company"><?php echo $product['company']; ?></span>
                         </div>
-                        <div class="a-size">Available sizes: <span class="size"><?php echo $product['size']; ?></span></div>
+                        <div class="a-size">Available sizes: <span class="size"><?php echo $product['sizeWomen']; ?></span></div>
                     </div>
                 </div>
 
@@ -80,7 +81,7 @@ include "header.php";
                     <a class="cart"
                        data-product-name="<?php echo $product['name']; ?>"
                        data-product-company-name="<?php echo $product['company']; ?>"
-                       data-product-size="<?php echo $product['size']; ?>"
+                       data-product-size="<?php echo $product['sizeWomen']; ?>"
                        data-product-price="<?php echo $product['price']; ?>">
                         <span class="price"><?php echo $product['price'] . "$" ?></span>
                         <span class="add-to-cart">

@@ -24,9 +24,11 @@ include "header.php";
 
 <div class="container">
     <div class="text">
+
         <p>
-            Website shopping cart product
+            Website Shopping Basket
         </p>
+
     </div>
 
     <hr>

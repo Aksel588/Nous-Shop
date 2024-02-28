@@ -2,7 +2,6 @@
 session_start();
 include "product.php";
 $products = men();
-//include "product-delete-server.php"
 ?>
 <!doctype html>
 <html lang="en">
@@ -36,6 +35,7 @@ include "header.php";
                 <input type="text" class="menSearch" id="menSearch"  name="menSearch" placeholder="Search....">
             </div>
             <div class="menSize">
+
                 <select name="size" id="menSize">
                     <option value="None">Select your size</option>
                     <option value="XL">XL</option>
@@ -46,9 +46,9 @@ include "header.php";
             </div>
             <div class="menPrice">
                 <input type="number" placeholder="Min" min="0"
-                       max="100000">
+                       max="1000000" id="menMin">
                 <input type="number" placeholder="Max" min="0"
-                       max="100000">
+                       max="100000" id="menMax">
             </div>
 
             <div class="buttonClick">

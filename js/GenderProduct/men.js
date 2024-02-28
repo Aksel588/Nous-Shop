@@ -1,23 +1,25 @@
 $("#buttonOne").click(function (e) {
     e.preventDefault();
 
-    // Get the search query
     var menSearch = $("#menSearch").val();
 
-    // Get the selected size
     var selectedSize = $("#menSize").val();
 
-    // Make AJAX request to search for products based on both search query and selected size
+    var minNum = $("#menMin").val();
+    var maxNum = $("#menMax").val();
+
     $.ajax({
         type: 'POST',
         url: "search-server/men-search.php",
         data: {
             search: menSearch,
-            selectSize: selectedSize
+            selectSize: selectedSize,
+            minNum:minNum,
+            maxNum:maxNum
         },
         dataType: 'html',
         success: function (response) {
-            $('#projectClub').html(response); // Update the target element to replace the search results
+            $('#projectClub').html(response);
         },
         error: function (error) {
             console.error('Ajax request failed:', error);

@@ -10,17 +10,37 @@ if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
 }
 
-if (isset($_POST['search']) || (isset($_POST['selectSize']) && $_POST['selectSize'] != "None")) {
+if (isset($_POST['search']) || isset($_POST['selectSize']) || (isset($_POST['minNum']) && isset($_POST['maxNum']))) {
+
     $query = "SELECT * FROM men WHERE 1=1";
 
     $conditions = array();
     $params = array();
 
-    if (isset($_POST['search'])) {
+    if (isset($_POST['search']) && $_POST['search'] !== "") {
         $search = '%' . $_POST['search'] . '%';
         $conditions[] = "name LIKE ?";
         $params[] = $search;
     }
+    if (isset($_POST['minNum']) && isset($_POST['maxNum'])) {
+        $minPrice = $_POST['minNum'];
+        $maxPrice = $_POST['maxNum'];
+        if ($minPrice !== "" && $maxPrice !== "") {
+            $conditions[] = "price BETWEEN ? AND ?";
+            $params[] = $minPrice;
+            $params[] = $maxPrice;
+        } elseif ($minPrice === "" && $maxPrice !== "") {
+            $conditions[] = "price <= ?";
+            $params[] = $maxPrice;
+        } elseif ($minPrice !== "" && $maxPrice === "") {
+            $conditions[] = "price >= ?";
+            $params[] = $minPrice;
+        } else{
+            echo "Please check filter conditions";
+            die();
+        }
+    }
+
 
     if (isset($_POST['selectSize']) && $_POST['selectSize'] != "None") {
         $size = '%' . $_POST['selectSize'] . '%';
@@ -34,8 +54,10 @@ if (isset($_POST['search']) || (isset($_POST['selectSize']) && $_POST['selectSiz
 
     $stmt = $connection->prepare($query);
     if ($stmt) {
-        $types = str_repeat("s", count($params));
-        $stmt->bind_param($types, ...$params);
+        if (!empty($params)) {
+            $types = str_repeat("s", count($params));
+            $stmt->bind_param($types, ...$params);
+        }
 
         $stmt->execute();
 
@@ -52,22 +74,13 @@ if (isset($_POST['search']) || (isset($_POST['selectSize']) && $_POST['selectSiz
     } else {
         echo "Query preparation failed";
     }
-} else {
-    $query = "SELECT * FROM men";
-    $result = $connection->query($query);
 
-    if ($result->num_rows > 0) {
-        while ($product = $result->fetch_assoc()) {
-            outputProductCard($product);
-        }
-    } else {
-        echo '<p>No products found</p>';
-    }
 }
 
 $connection->close();
 
-function outputProductCard($product) {
+function outputProductCard($product)
+{
     echo '
     <div class="el-wrapper" id="el-wrapper">
         <div class="box-up">
@@ -97,4 +110,5 @@ function outputProductCard($product) {
         </div>
     </div>';
 }
+
 ?>

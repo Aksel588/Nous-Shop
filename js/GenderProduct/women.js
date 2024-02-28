@@ -1,18 +1,31 @@
-$(document).ready(function () {
-    $('#womenSearch').on('input', function () {
-        var womenSearch = $(this).val();
-        $.ajax({
-            type: 'POST',
-            url: "search-server/women-search.php", // Update the URL to match the correct path
-            data: {search: womenSearch},
-            dataType: 'html',
-            success: function (response) {
-                $('#projectClub').html(response); // Update the target element to replace the search results
-            },
-            error: function (error) {
-                console.error('Ajax request failed:', error);
-            }
-        });
+$("#buttonOne").click(function (e) {
+    e.preventDefault();
+    // alert("hello!");
+
+    var womenSearch = $("#womenSearch").val();
+
+    var selectedSize = $("#womenSize").val();
+
+    var minNum = $("#womenMin").val();
+    var maxNum = $("#womenMax").val();
+
+
+    $.ajax({
+        type: 'POST',
+        url: "search-server/women-search.php",
+        data: {
+            search: womenSearch,
+            selectSize: selectedSize,
+            minNum:minNum,
+            maxNum:maxNum
+        },
+        dataType: 'html',
+        success: function (response) {
+            $('#projectClub').html(response); // Update the target element to replace the search results
+        },
+        error: function (error) {
+            console.error('Ajax request failed:', error);
+        }
     });
 });
 
@@ -42,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-$(".cart").click(function (e) {
+$(document).on('click', '.cart', function (e) {
     e.preventDefault();
     var $click = $(this);
     var productName = $click.data("product-name");
@@ -50,12 +63,10 @@ $(".cart").click(function (e) {
     var productSize = $click.data("product-size");
     var productPrice = $click.data("product-price");
 
-
     console.log("Product Name: " + productName);
     console.log("Company: " + productCompany);
     console.log("Size: " + productSize);
     console.log("Price: " + productPrice);
-
 
     $.ajax({
         type: "POST",
@@ -69,7 +80,6 @@ $(".cart").click(function (e) {
         success: function (response) {
             console.log("AJAX request successful:");
             var updatedCart = JSON.parse(response);
-
             $("#cartDisplay").html("Cart Items: " + updatedCart.items + " Total Price: " + updatedCart.totalPrice);
         },
         error: function (xhr, status, error) {
