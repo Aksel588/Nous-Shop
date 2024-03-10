@@ -99,12 +99,14 @@ header {
     text-align: center;
     font-family: fontThree;
 }
+
 .container hr {
     width: 100%;
     border: solid 2px #EF6136;
-    border-radius: 30px ;
+    border-radius: 30px;
     margin: 20px auto;
 }
+
 .text p {
     font-size: 50px;
     color: #EF6136;
@@ -116,7 +118,7 @@ header {
     padding: 5px;
 }
 
-table{
+table {
     width: 1000px;
     min-height: 240px;
     font-family: fontFour;
@@ -124,19 +126,22 @@ table{
     text-align: center;
     margin: 10px auto;
 }
-table tr th{
+
+table tr th {
     height: 70px;
     font-size: 22px;
     font-family: fontThree;
+    border: solid 1px black;
+    padding: 3px;
 }
 
-table tr td,th {
+table tr td {
     height: 40px;
     border: solid 1px black;
     padding: 3px;
 }
 
-.deleteButton{
+.deleteButton {
     width: 50px;
     height: 50px;
     border: none;
@@ -146,8 +151,34 @@ table tr td,th {
     background: #e5e1e1;
     border-radius: 10px;
 }
-.delete{
+
+.delete {
     width: 60px;
+}
+
+.shopAllText-Bottom {
+    width: 50px;
+    height: 50px;
+    border: solid 3px #EF6136;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 17px;
+    color: #EF6136;
+    font-family: fontThree;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: .7s;
+    cursor: pointer;
+
+}
+
+.shopAll button:hover {
+    background-color: #EF6136;
+    color: white;
+}
+
+.send {
+    border: none;
 }
 
 footer {

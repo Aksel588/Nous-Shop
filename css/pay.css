@@ -1,171 +1,239 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-
-*{
-    font-family: 'Poppins', sans-serif;
-    margin:0; padding:0;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    outline: none; border: none;
     text-decoration: none;
-    text-transform: uppercase;
 }
 
-.container{
-    min-height: 100vh;
-    background: #eee;
+@font-face {
+    font-family: fontThree;
+    src: url(../Font/fontThree);
+}
+
+@font-face {
+    font-family: fontFour;
+    src: url(../Font/fontFour);
+}
+
+@font-face {
+    font-family: fontOne;
+    src: url(../Font/fontOne);
+}
+
+header {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: fontFour;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.logo .text {
+    width: 98px;
+    height: 48px;
+    background-color: black;
+    font-family: fontOne;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 10px;
+}
+
+.logo .text a {
+    color: white;
+    transition: .7s;
+}
+
+.logo .text a:hover {
+    color: #EF6136;
+}
+
+.search {
+    width: 160px;
+    height: 50px;
+    border: none;
+    font-size: 17px;
+}
+
+.logoInput input:hover {
+    border-bottom: solid 2px black;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    font-size: 16px;
+}
+
+.menu li a {
+    color: black;
+    transition: .7s;
+    cursor: pointer;
+}
+
+
+.menu li a:hover {
+    color: #EF6136;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    font-family: fontFour;
+    /*font-family: fontThree;*/
+}
+
+.divOne {
+    width: 50%;
+    height: 100%;
+    border: solid 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textDiv {
+    width: 500px;
+    min-height: 500px;
+    border: solid 3px black;
+    padding: 32px;
+}
+
+.textTitle {
+    width: 100%;
+    height: auto;
+    font-size: 40px;
+}
+
+.textInfo {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    margin-top: 45px;
+}
+
+.payInfo {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    font-size: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+}
+
+.divOne span {
+    color: #EF6136;
+    font-family: fontThree;
+}
+
+.buttonDiv {
+    width: 100%;
+    height: auto;
+    border: solid 3px black;
+    margin-top: 30px;
+}
+
+
+.divTwo {
+    width: 50%;
+    height: 100%;
+    border: solid 3px black;
+}
+
+
+footer {
+    width: 100%;
+    height: 350px;
+    border: solid 3px black;
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column;
-    padding-bottom: 60px;
+    gap: 30px;
+    font-family: fontFour;
 }
 
-.container form{
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 10px 15px rgba(0,0,0,.1);
-    padding: 20px;
-    width: 600px;
-    padding-top: 160px;
-}
-
-.container form .inputBox{
-    margin-top: 20px;
-}
-
-.container form .inputBox span{
-    display: block;
-    color:#999;
-    padding-bottom: 5px;
-}
-
-.container form .inputBox input,
-.container form .inputBox select{
-    width: 100%;
-    padding: 10px;
-    border-radius: 10px;
-    border:1px solid rgba(0,0,0,.3);
-    color:#444;
-}
-
-.container form .flexbox{
+.menuFooter {
+    width: 190px;
+    height: 270px;
+    /* border: solid 3px white; */
     display: flex;
-    gap:15px;
+    justify-content: center;
+    align-items: center;
 }
 
-.container form .flexbox .inputBox{
-    flex:1 1 150px;
+.menuFooter ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.container form .submit-btn{
-    width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    margin-top: 20px;
-    padding: 10px;
+.menuFooter ul li a {
     font-size: 20px;
-    color:#fff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .2s linear;
+    color: #C2C2C2;
 }
 
-.container form .submit-btn:hover{
-    letter-spacing: 2px;
-    opacity: .8;
-}
-
-.container .card-container{
-    margin-bottom: -150px;
-    position: relative;
-    height: 250px;
-    width: 400px;
-}
-
-.container .card-container .front{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0; left: 0;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    border-radius: 5px;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    padding:20px;
-    transform:perspective(1000px) rotateY(0deg);
-    transition:transform .4s ease-out;
-}
-
-.container .card-container .front .image{
+.subscribeDiv {
+    width: 340px;
+    height: 270px;
+    padding: 40px;
     display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 10px;
+    flex-direction: column;
+
 }
 
-.container .card-container .front .image img{
-    height: 50px;
+.subscribeDiv div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 12px;
 }
 
-.container .card-container .front .card-number-box{
-    padding:30px 0;
+.subscribeDiv p {
     font-size: 22px;
-    color:#fff;
+    color: white;
+    text-align: center;
+    margin-top: 17px;
 }
 
-.container .card-container .front .flexbox{
-    display: flex;
+.subscribeDiv input {
+    width: 250px;
+    height: 40px;
+    border: solid 2px white;
+    background-color: black;
 }
 
-.container .card-container .front .flexbox .box:nth-child(1){
-    margin-right: auto;
+.subscribeDiv input:hover {
+    border: solid 5px white;
 }
 
-.container .card-container .front .flexbox .box{
-    font-size: 15px;
-    color:#fff;
-}
-
-.container .card-container .back{
-    position: absolute;
-    top:0; left: 0;
-    height: 100%;
-    width: 100%;
-    background:linear-gradient(45deg, blueviolet, deeppink);
-    border-radius: 5px;
-    padding: 20px 0;
-    text-align: right;
-    backface-visibility: hidden;
-    box-shadow: 0 15px 25px rgba(0,0,0,.2);
-    transform:perspective(1000px) rotateY(180deg);
-    transition:transform .4s ease-out;
-}
-
-.container .card-container .back .stripe{
-    background: #000;
-    width: 100%;
-    margin: 10px 0;
-    height: 50px;
-}
-
-.container .card-container .back .box{
-    padding: 0 20px;
-}
-
-.container .card-container .back .box span{
-    color:#fff;
-    font-size: 15px;
-}
-
-.container .card-container .back .box .cvv-box{
-    height: 50px;
-    padding: 10px;
-    margin-top: 5px;
-    color:#333;
-    background: #fff;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.container .card-container .back .box img{
-    margin-top: 30px;
-    height: 30px;
+.subscribeDiv button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: #EF6136;
+    font-size: 17px;
+    color: white;
 }

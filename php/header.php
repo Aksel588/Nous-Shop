@@ -32,9 +32,6 @@
                     <a href="/Nous-Shop/php/aboutUs.php">About</a>
                 </li>
 
-                <li>
-                    <a href="/Nous-Shop/php/contact.php">Contact</a>
-                </li>
 
                 <li><a href="/Nous-Shop/php/profile.php" id="profile"><?php echo $_SESSION["useruid"] ?></a></li>
                 <li><a href="/Nous-Shop/includes/logout.inc.php"> logout</a></li>
@@ -63,10 +60,6 @@
 
                 <li>
                     <a href="/Nous-Shop/php/aboutUs.php">About</a>
-                </li>
-
-                <li>
-                    <a href="/Nous-Shop/php/contact.php">Contact</a>
                 </li>
 
                 <li>

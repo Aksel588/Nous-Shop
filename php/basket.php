@@ -11,7 +11,6 @@ session_start();
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/basket.css">
-    <script src="https://kit.fontawesome.com/45ca86891d.js" crossorigin="anonymous"></script>
     <title>Basket</title>
 </head>
 
@@ -38,8 +37,8 @@ include "header.php";
             <tr>
                 <th>Name</th>
                 <th>Company Name</th>
-                <th>Price</th>
                 <th>Action</th>
+                <th>Price</th>
                 <th>Button</th>
             </tr>
 
@@ -59,21 +58,30 @@ include "header.php";
 
 
             <tr class="cart-display">
-                <td colspan="4">
+                <td colspan="3">
                     <?php
                     echo "Items in Cart: " . count($_SESSION['cart']);
                     ?>
                 </td>
-
                 <td>Total:
                     <span class="totalAmount">
-            <?php
-            echo $_SESSION['totalAmount'] . "$";
-            ?>
-        </span>
+                        <?php
+                        echo $_SESSION['totalAmount'] . "$";
+                        ?>
+                    </span>
+                </td>
+                <td>
+                    <div class="shopAll">
+                        <div class="shopAllText">
+                            <a href="./pay.php">
+                                <button class="shopAllText-Bottom">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </td>
             </tr>
-
         </table>
     </div>
 </div>
@@ -84,6 +92,7 @@ include "footer.php";
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/45ca86891d.js" crossorigin="anonymous"></script>
 <script src="../js/product.js"></script>
 </body>
 

@@ -1,18 +1,31 @@
-$(document).ready(function () {
-    $('#allSearch').on('input', function () {
-        var allSearch = $(this).val();
-        $.ajax({
-            type: 'POST',
-            url: "search-server/showall-search.php", // Update the URL to match the correct path
-            data: {search: menSearch},
-            dataType: 'html',
-            success: function (response) {
-                $('#projectClub').html(response); // Update the target element to replace the search results
-            },
-            error: function (error) {
-                console.error('Ajax request failed:', error);
-            }
-        });
+$("#buttonOne").click(function (e) {
+    e.preventDefault();
+    alert("hello");
+
+    var showSearch = $("#showSearch").val();
+console.log(showSearch);
+    var selectedSize = $("#showSize").val();
+console.log(selectedSize);
+    var minNum = $("#showMin").val();
+    var maxNum = $("#showMax").val();
+console.log(minNum, maxNum);
+    $.ajax({
+        type: 'POST',
+        url: "search-server/showAll-search.php",
+        data: {
+            search: showSearch,
+            selectSize: selectedSize,
+            minNum:minNum,
+            maxNum:maxNum
+        },
+        dataType: 'html',
+        success: function (response) {
+            $('#projectClub').html(response);
+            // console.log(response);
+        },
+        error: function (error) {
+            console.error('Ajax request failed:', error);
+        }
     });
 });
 

@@ -1,138 +1,65 @@
 <?php
 session_start();
-$currentYear = date('Y');
-?>
-<!DOCTYPE html>
-<html lang="en">
+if (empty($_SESSION['cart'])) {
+    header("location: ./basket.php?noneProduct");
 
+}
+?>
+<!doctype html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/45ca86891d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/pay.css">
-
+    <title>Pay</title>
 </head>
-
 <body>
-
+<?php
+include "./header.php";
+?>
 <div class="container">
-
-    <div class="card-container">
-
-        <div class="front">
-            <div class="image">
-                <img src="image/chip.png" alt="">
-                <img src="image/visa.png" alt="">
+    <div class="divOne">
+        <div class="textDiv">
+            <div class="textTitle">
+                <p>You have selected <?php echo count($_SESSION['cart']); ?> products and <span>Thank you for your purchases</span>
+                </p>
             </div>
-            <div class="card-number-box">################</div>
-            <div class="flexbox">
-                <div class="box">
-                    <span>card holder</span>
-                    <div class="card-holder-name">full name</div>
-                </div>
-                <div class="box">
-                    <span>expires</span>
-                    <div class="expiration">
-                        <span class="exp-month">mm</span>
-                        <span class="exp-year">yy</span>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="back">
-            <div class="stripe"></div>
-            <div class="box">
-                <span>cvv</span>
-                <div class="cvv-box"></div>
-                <img src="image/visa.png" alt="">
+            <div class="textInfo">
+                <h3><span>You have selected</span>
+
+                    <?php foreach ($_SESSION['cart'] as $key => $cart): ?>
+                        <td><?php echo $cart['name'] . ","; ?></td>
+                    <?php endforeach; ?>
+                    <span>these products</span></h3>
+            </div>
+
+            <div class="payInfo">
+                <p>
+                    You have to pay
+                    <span>
+                    <?php
+                    echo $_SESSION['totalAmount'] . " " . "$";
+                    ?>
+             </span>
+                </p>
+            </div>
+            <div class="buttonDiv">
+
             </div>
         </div>
 
     </div>
-
-    <form action="../includes/pay.inc.php" method="POST">
-        <div class="inputBox">
-            <span>card number</span>
-            <input type="text" maxlength="16" class="card-number-input" name="cardNumber">
-        </div>
-        <div class="inputBox">
-            <span>card holder</span>
-            <input type="text" class="card-holder-input" name="cardHolder">
-        </div>
-        <div class="flexbox">
-            <div class="inputBox">
-                <span>expiration mm</span>
-                <select name="month" id="" class="month-input">
-                    <option value="month" selected disabled>month</option>
-                    <option value="01">01</option>
-                    <option value="02">02</option>
-                    <option value="03">03</option>
-                    <option value="04">04</option>
-                    <option value="05">05</option>
-                    <option value="06">06</option>
-                    <option value="07">07</option>
-                    <option value="08">08</option>
-                    <option value="09">09</option>
-                    <option value="10">10</option>
-                    <option value="11">11</option>
-                    <option value="12">12</option>
-                </select>
-            </div>
-            <div class="inputBox">
-                <span>expiration yy</span>
-
-                <select name="year" id="year" class="year-input">
-                    <option value="year" selected disabled>year</option>
-                    <?php
-                    for ($year = $currentYear; $year <= $currentYear + 10; $year++) {
-                        echo "<option value=\"$year\">$year</option>";
-                    }
-                    ?>
-                </select>
-
-            </div>
-            <div class="inputBox">
-                <span>cvv</span>
-                <input type="number" maxlength="4" class="cvv-input" name="cvv">
-            </div>
-        </div>
-        <input type="submit" value="submit" class="submit-btn" name="submit">
-    </form>
+    <div class="divTwo">
+        h
+    </div>
 </div>
 
-
-<script>
-    document.querySelector('.card-number-input').oninput = () => {
-        document.querySelector('.card-number-box').innerText = document.querySelector('.card-number-input').value;
-    }
-
-    document.querySelector('.card-holder-input').oninput = () => {
-        document.querySelector('.card-holder-name').innerText = document.querySelector('.card-holder-input').value;
-    }
-
-    document.querySelector('.month-input').oninput = () => {
-        document.querySelector('.exp-month').innerText = document.querySelector('.month-input').value;
-    }
-
-    document.querySelector('.year-input').oninput = () => {
-        document.querySelector('.exp-year').innerText = document.querySelector('.year-input').value;
-    }
-
-    document.querySelector('.cvv-input').onmouseenter = () => {
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(-180deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(0deg)';
-    }
-
-    document.querySelector('.cvv-input').onmouseleave = () => {
-        document.querySelector('.front').style.transform = 'perspective(1000px) rotateY(0deg)';
-        document.querySelector('.back').style.transform = 'perspective(1000px) rotateY(180deg)';
-    }
-
-    document.querySelector('.cvv-input').oninput = () => {
-        document.querySelector('.cvv-box').innerText = document.querySelector('.cvv-input').value;
-    }
-</script>
+<?php
+include "./footer.php";
+?>
 </body>
-
 </html>

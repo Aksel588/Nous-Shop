@@ -32,7 +32,7 @@ include "header.php";
     <div class="filter">
         <div class="filterFirstDiv">
             <div class="menSearch">
-                <input type="text" class="menSearch" id="menSearch"  name="menSearch" placeholder="Search....">
+                <input type="text" class="menSearch" id="menSearch" name="menSearch" placeholder="Search....">
             </div>
             <div class="menSize">
 
@@ -70,7 +70,8 @@ include "header.php";
                             <span class="p-name"><?php echo $product['name']; ?></span>
                             <span class="p-company"><?php echo $product['company']; ?></span>
                         </div>
-                        <div class="a-size">Available sizes: <span class="size"><?php echo $product['sizeMen']; ?></span>
+                        <div class="a-size">Available sizes: <span
+                                    class="size"><?php echo $product['sizeMen']; ?></span>
                         </div>
                     </div>
                 </div>

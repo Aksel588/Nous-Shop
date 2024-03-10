@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f0f20c5-e04c-4c31-933e-8763afac7cca" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/search-server/showAll-search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-server/womenAdd-server.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-server/womenAdd-server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/admin-server/womenProduct-server.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/admin-server/womenProduct-server.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/women-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/women-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/classes/dbh.classes.php" beforeDir="false" afterPath="$PROJECT_DIR$/classes/dbh.classes.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/men-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/men-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/women-product.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/women-product.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/GenderProduct/men.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/men.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/GenderProduct/women.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/women.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/basket.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/basket.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/contact.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/pay.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/pay.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/showAll.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/showAll.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/GenderProduct/showAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/GenderProduct/showAll.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/basket.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/basket.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/men-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/men-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/pay.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/pay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/search-server/men-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/men-search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/search-server/men-size.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/php/search-server/women-search.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/search-server/women-search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/women-product.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/women-product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/showAll.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/showAll.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +98,18 @@
       <workItem from="1708716969175" duration="2354000" />
       <workItem from="1708946951031" duration="101000" />
       <workItem from="1708947085510" duration="7117000" />
+      <workItem from="1709211243933" duration="694000" />
+      <workItem from="1709292125491" duration="5821000" />
+      <workItem from="1709467729069" duration="387000" />
+      <workItem from="1709468169984" duration="398000" />
+      <workItem from="1709468982791" duration="3830000" />
+      <workItem from="1709652516454" duration="95000" />
+      <workItem from="1709652794236" duration="171000" />
+      <workItem from="1709652989252" duration="93000" />
+      <workItem from="1709653107786" duration="574000" />
+      <workItem from="1709660055317" duration="9057000" />
+      <workItem from="1710003311827" duration="719000" />
+      <workItem from="1710013600672" duration="1759000" />
     </task>
     <servers />
   </component>

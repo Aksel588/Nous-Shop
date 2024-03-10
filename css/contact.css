@@ -260,10 +260,8 @@ footer {
     border-color: #dc3545;
 }
 .container2{
-    display: flex;
-}
-
-.divContainer{
-    width: 600px;
+    width: 100%;
+    height:500px;
     border: solid 3px black;
 }
+
