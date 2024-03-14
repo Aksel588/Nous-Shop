@@ -34,7 +34,8 @@ header {
     align-items: center;
     gap: 13px;
 }
-.logo .text  {
+
+.logo .text {
     width: 98px;
     height: 48px;
     background-color: black;
@@ -48,7 +49,7 @@ header {
     line-height: 10px;
 }
 
-.logo .text a{
+.logo .text a {
     color: white;
     transition: .7s;
 }
@@ -85,51 +86,204 @@ header {
     color: #EF6136;
 }
 
-.box {
-    width: 1300px;
-    min-height: 500px;
-    margin: 0px auto;
-    padding: 0px 20px 20px 20px;
-}
-
-
-
-
-
-
-.shopAll {
+.newArrivals {
     width: 100%;
-    height: 120px;
+    height: 130px;
+    /*border: solid 3px black;*/
+    font-family: fontOne;
+    letter-spacing: 11px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.shopAll .shopAllText {
-    width: 240px;
+.newArrivals div {
+    width: 500px;
     height: auto;
+    /*border: solid 3px black;*/
+    border-bottom: 10px solid #EF6136;
     display: flex;
-    gap: 10px;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.shopAllText-Bottom {
-    width: 160px;
-    height: 44px;
-    border: solid 3px #EF6136;
-    background-color: white;
-    color: #EF6136;
-    font-family: fontThree;
+.newArrivals div p {
+    font-size: 80px;
     text-transform: uppercase;
-    font-size: 18px;
-    transition: .7s;
-    cursor: pointer;
+}
+
+
+.container {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    padding: 5px;
+}
+
+.divOne {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2px;
+    margin-top: 90px;
+}
+
+.flagshipShop {
+    width: 280px;
+    height: 170px;
+    /*border: solid 3px black;*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flagshipShop table {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.flagshipShop table tr td {
+    font-family: fontFour;
+    margin-top: 20px;
+}
+
+.flagshipShop p {
+    font-size: 24px;
+    font-family: fontThree;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.openingHours {
+    width: 280px;
+    height: 170px;
+    /*border: solid 3px black;*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.openingHours table {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    text-align: center;
+}
+
+.openingHours table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.openingHours table tr td {
+    text-align: center;
+    font-family: fontFour;
+}
+
+.openingHours p {
+    font-size: 24px;
+    font-family: fontThree;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.customerService {
+    width: 280px;
+    height: 170px;
+    /*border: solid 3px black;*/
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.customerService p {
+    font-size: 24px;
+    font-family: fontThree;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.customerService table tr {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: fontFour;
+}
+
+.squareDiv {
+    width: 100%;
+    height: 150px;
+    /*border: solid 3px black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.squareDiv div {
+    width: 12px;
+    height: 12px;
+    border: solid 3px #EF6136;
+    background: #EF6136;
+}
+
+.divTwo {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    margin-top: 12px;
+    padding: 0px 3px 0px 3px;
+    margin-top: 30px;
 
 }
 
-.shopAll button:hover {
-    background-color: #EF6136;
-    color: white;
+.textStockists {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: fontThree;
+    font-size: 24px;
+    color: #EF6136;
 }
+
+
+.streetDiv {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 2px;
+}
+
+.divTwoTex {
+    width: 280px;
+    height: 170px;
+    /*border: solid 3px black;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: fontFour;
+    font-size: 20px;
+    gap: 20px;
+}
+
 
 
 
@@ -211,57 +365,4 @@ footer {
     color: white;
 }
 
-
-
-.botLink {
-    width: 0;
-}
-
-
-.botButton {
-    min-width: 200px;
-    max-width: 340px;
-    height: 56px;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    background-color: black;
-    color: white;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: .7s;
-    font-family: fontThree;
-}
-
-.botButton:hover{
-    color: black;
-    background-color: #EF6136;
-}
-
-.invalid-feedback,
-.empty-feedback {
-    display: none;
-}
-
-.was-validated :placeholder-shown:invalid ~ .empty-feedback {
-    display: block;
-}
-
-.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
-    display: block;
-}
-
-.is-invalid,
-.was-validated :invalid {
-    border-color: #dc3545;
-}
-.container2{
-    width: 100%;
-    height:500px;
-    border: solid 3px black;
-}
 

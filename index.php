@@ -139,21 +139,21 @@ include "../Nous-Shop/php/header.php";
 </div>
 
 
-<div class="shopAll">
-    <div class="shopAllText">
-        <a href="./php/showAll.php">
-            <button class="shopAllText-Bottom">
-                <p>SUBMIT</p>
-            </button>
-        </a>
+    <div class="shopAll">
+        <div class="shopAllText">
+            <a href="./php/showAll.php">
+                <button class="shopAllText-Bottom">
+                    <p>SUBMIT</p>
+                </button>
+            </a>
 
-        <a href="" class="shopAllText-a">
-            <button class="shopAllText-i" id="shopAllText-i">
-                <i class="fa-solid fa-right-long"></i>
-            </button>
-        </a>
+            <a href="" class="shopAllText-a">
+                <button class="shopAllText-i" id="shopAllText-i">
+                    <i class="fa-solid fa-right-long"></i>
+                </button>
+            </a>
+        </div>
     </div>
-</div>
 <?php
 include "php/footer.php";
 ?>

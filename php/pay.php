@@ -24,7 +24,7 @@ include "./header.php";
     <div class="divOne">
         <div class="textDiv">
             <div class="textTitle">
-                <p>You have selected <?php echo count($_SESSION['cart']); ?> products and <span>Thank you for your purchases</span>
+                <p>You have selected <?php echo count($_SESSION['cart']); ?> products and <span>Thank you for your purchases :)</span>
                 </p>
             </div>
 
@@ -48,13 +48,19 @@ include "./header.php";
                 </p>
             </div>
             <div class="buttonDiv">
-
+                <a href="./php/showAll.php">
+                    <button class="shopAllText-Bottom">
+                        <p>SUBMIT</p>
+                    </button>
+                </a>
             </div>
         </div>
 
     </div>
     <div class="divTwo">
-        h
+        <div class="div">
+
+        </div>
     </div>
 </div>
 
