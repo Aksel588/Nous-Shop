@@ -11,11 +11,11 @@ session_start();
     <script src="https://kit.fontawesome.com/45ca86891d.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
-<body>
+<body id="body">
+<?php
+include "./header.php";
+?>
 <div>
-    <?php
-    include "./header.php";
-    ?>
     <div class="newArrivals">
         <div>
             <p> CONTACT US</p>
@@ -60,9 +60,13 @@ session_start();
                 </table>
             </div>
         </div>
+
+
         <div class="squareDiv">
             <div></div>
         </div>
+
+
         <div class="divTwo">
             <div class="textStockists">
                 <p>Stockists</p>
@@ -74,7 +78,6 @@ session_start();
                         123-456-7890</p>
                 </div>
                 <div class="divTwoTex">
-
                     <p>500 Terry Francine St.
                         San Francisco, CA 94158
                         123-456-7890</p>
@@ -110,19 +113,28 @@ session_start();
         </div>
 
         <div class="divThree">
-    <!--            <div>-->
-    <!--                <p>For inquiries regarding an order, please include your order number and the date your order was-->
-    <!--                    placed</p>-->
-    <!--            </div>-->
-            <div></div>
-            <div></div>
+            <div class="divThree_text">
+                <p>For inquiries regarding an order, please include your order number and the date your order was
+                    placed</p>
+            </div>
+            <div class="mailer">
+                <div>
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="How Can We Help?">
+                    <button>
+                        Submit
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 <?php
 include "./footer.php";
 ?>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="../js/contact.js"></script>
 
 </body>
 

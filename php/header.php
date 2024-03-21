@@ -1,4 +1,9 @@
 <header>
+    <div class="menu-toggle" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
     <div class="logo">
         <div class="text">
             <a href="/Nous-Shop/index.php">Nous</a>
@@ -9,8 +14,15 @@
         </div>
     </div>
 
+    <a href="/Nous-Shop/php/basket.php" class="basketMobile">
+        <i class="fa-solid fa-basket-shopping"></i>
+        <?php
+        echo $_SESSION['countBasket'];
+        ?>
+    </a>
 
-    <div>
+
+    <div class="menu1" id="menu-container">
         <ul class="menu">
 
             <?php
@@ -31,11 +43,14 @@
                 <li>
                     <a href="/Nous-Shop/php/aboutUs.php">About</a>
                 </li>
+                <li>
+                    <a href="/Nous-Shop/php/contact.php">Contact</a>
+                </li>
 
 
                 <li><a href="/Nous-Shop/php/profile.php" id="profile"><?php echo $_SESSION["useruid"] ?></a></li>
                 <li><a href="/Nous-Shop/includes/logout.inc.php"> logout</a></li>
-                <li>
+                <li class="basket">
                     <a href="/Nous-Shop/php/basket.php">
                         <i class="fa-solid fa-basket-shopping"></i>
                         <?php
@@ -60,6 +75,9 @@
 
                 <li>
                     <a href="/Nous-Shop/php/aboutUs.php">About</a>
+                </li>
+                <li>
+                    <a href="/Nous-Shop/php/contact.php">Contact</a>
                 </li>
 
                 <li>

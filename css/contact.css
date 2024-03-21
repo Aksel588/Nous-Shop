@@ -24,6 +24,12 @@ header {
     font-family: fontFour;
 }
 
+
+.hamburger {
+    display: none;
+}
+
+
 @font-face {
     font-family: fontOne;
     src: url(../Font/fontOne);
@@ -86,6 +92,27 @@ header {
     color: #EF6136;
 }
 
+.menu-toggle {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 0.1875rem;
+    width: 1.5625rem;
+    background-color: black;
+    margin-bottom: 0.3125rem;
+    display: block;
+}
+
+.basketMobile {
+    display: none;
+}
+
 .newArrivals {
     width: 100%;
     height: 130px;
@@ -95,6 +122,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    padding: 20px;
 }
 
 .newArrivals div {
@@ -229,7 +258,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin: 10px 0px 10px 0px;
 }
 
 .squareDiv div {
@@ -243,7 +272,6 @@ header {
     width: 100%;
     height: auto;
     /*border: solid 3px black;*/
-    margin-top: 12px;
     padding: 0px 3px 0px 3px;
     margin-top: 30px;
 
@@ -284,9 +312,75 @@ header {
     gap: 20px;
 }
 
+.divThree {
+    width: 100%;
+    height: 200px;
+    /*border: solid 3px black;*/
+    margin-top: 30px;
+}
 
+.divThree_text {
+    width: 590px;
+    height: auto;
+    /*border: solid 3px black;*/
+    text-align: center;
+    margin: 10px auto;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-family: fontThree;
+}
 
+.mailer {
+    width: 100%;
+    height: auto;
+    /*border: solid 3px black;*/
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
+.mailer div {
+    width: 800px;
+    height: auto;
+    /*border: solid 3px black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.mailer div input {
+    width: 220px;
+    height: 38px;
+    border: solid 2px #EF6136;
+    padding-left: 9px;
+    color: #EF6136;
+    font-size: 16px;
+}
+
+.mailer div input:focus {
+    outline: none;
+}
+
+.mailer div button {
+    width: 111px;
+    height: 38px;
+    border: solid 2px #EF6136;
+    background: #EF6136;
+    font-size: 17px;
+    color: white;
+    font-family: fontFour;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.mailer div button:hover {
+    background: white;
+    color: #EF6136;
+}
 
 footer {
     width: 100%;
@@ -363,6 +457,161 @@ footer {
     background-color: #EF6136;
     font-size: 17px;
     color: white;
+}
+
+
+@media screen and (max-width: 768px) {
+    @font-face {
+        font-family: fontThree;
+        src: url(../Font/fontThree);
+    }
+
+    @font-face {
+        font-family: fontFour;
+        src: url(../Font/fontFour);
+    }
+
+    header {
+        display: flex;
+    }
+
+
+    header .logoInput {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+    }
+    .logo .text {
+        width: 130px;
+        height: 50px;
+        background-color: black;
+        font-family: fontOne;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 33px;
+        text-transform: uppercase;
+    }
+
+    .menu1 {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(234, 234, 234, 0.96);
+        margin: 0 auto;
+    }
+
+    .menu1.active {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .basketMobile {
+        display: block;
+        font-size:26px;
+        color: black;
+        transition: .6s;
+    }
+    .basketMobile:hover{
+        color: #EF6136;
+    }
+    .menu li a {
+        font-size: 27px;
+        color: #EF6136;
+        font-family: fontFour;
+    }
+
+
+    .menu-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu-toggle span:hover{
+     background: #EF6136;
+    }
+    .basket {
+        font-size: 22px;
+        display: none;
+    }
+
+    .newArrivals.active {
+        height: auto;
+        padding: 5px;
+    }
+
+    .newArrivals div p {
+        font-size: 55px;
+    }
+
+    .divOne {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 0px;
+    }
+
+    .flagshipShop {
+        margin: 0;
+    }
+
+    .streetDiv {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .divThree {
+        height: auto;
+    }
+
+    .divThree_text {
+        width: 378px;
+        font-size: 18px;
+    }
+
+    .mailer div {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 20px;
+    }
+
+    .mailer div input {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+
 }
 
 

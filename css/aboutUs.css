@@ -85,6 +85,9 @@ header {
 .menu li a:hover {
     color: #EF6136;
 }
+.basketMobile {
+    display: none;
+}
 
 .box {
     width: 1300px;

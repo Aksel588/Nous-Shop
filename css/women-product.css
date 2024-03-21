@@ -86,6 +86,10 @@ header {
     color: #EF6136;
 }
 
+.basketMobile {
+    display: none;
+}
+
 .filter {
     width: 100%;
     height: auto;
