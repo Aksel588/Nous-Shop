@@ -14,7 +14,7 @@ $products = showAll();
     <script src="https://kit.fontawesome.com/45ca86891d.js" crossorigin="anonymous"></script>
     <title>Show All</title>
 </head>
-<body>
+<body id="body">
 <?php
 include "header.php";
 ?>
@@ -103,5 +103,6 @@ include "footer.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="../js/GenderProduct/showAll.js"></script>
+<script src="../js/mobile.js"></script>
 </body>
 </html>

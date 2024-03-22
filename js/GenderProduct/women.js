@@ -16,8 +16,8 @@ $("#buttonOne").click(function (e) {
         data: {
             search: womenSearch,
             selectSize: selectedSize,
-            minNum:minNum,
-            maxNum:maxNum
+            minNum: minNum,
+            maxNum: maxNum
         },
         dataType: 'html',
         success: function (response) {

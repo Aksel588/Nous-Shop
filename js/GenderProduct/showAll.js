@@ -1,22 +1,21 @@
 $("#buttonOne").click(function (e) {
     e.preventDefault();
-    alert("hello");
 
     var showSearch = $("#showSearch").val();
-console.log(showSearch);
+    console.log(showSearch);
     var selectedSize = $("#showSize").val();
-console.log(selectedSize);
+    console.log(selectedSize);
     var minNum = $("#showMin").val();
     var maxNum = $("#showMax").val();
-console.log(minNum, maxNum);
+    console.log(minNum, maxNum);
     $.ajax({
         type: 'POST',
         url: "search-server/showAll-search.php",
         data: {
             search: showSearch,
             selectSize: selectedSize,
-            minNum:minNum,
-            maxNum:maxNum
+            minNum: minNum,
+            maxNum: maxNum
         },
         dataType: 'html',
         success: function (response) {

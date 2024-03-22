@@ -36,9 +36,6 @@ if (isset($_POST['search']) || isset($_POST['selectSize']) || (isset($_POST['min
         } elseif ($minPrice !== "" && $maxPrice === "") {
             $conditions[] = "price >= ?";
             $params[] = $minPrice;
-        } else{
-            echo "Please check filter conditions";
-            die();
         }
     }
 

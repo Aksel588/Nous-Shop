@@ -8,6 +8,4 @@ document.getElementById('mobile-menu').addEventListener('click', function() {
     } else {
         body.style.overflow = "hidden";
     }
-
-
 });

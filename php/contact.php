@@ -134,7 +134,7 @@ include "./header.php";
 include "./footer.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="../js/contact.js"></script>
+<script src="../js/mobile.js"></script>
 
 </body>
 

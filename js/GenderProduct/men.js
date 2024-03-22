@@ -1,12 +1,10 @@
 $("#buttonOne").click(function (e) {
     e.preventDefault();
-
     var menSearch = $("#menSearch").val();
-
     var selectedSize = $("#menSize").val();
-
     var minNum = $("#menMin").val();
     var maxNum = $("#menMax").val();
+
 
     $.ajax({
         type: 'POST',
@@ -14,8 +12,8 @@ $("#buttonOne").click(function (e) {
         data: {
             search: menSearch,
             selectSize: selectedSize,
-            minNum:minNum,
-            maxNum:maxNum
+            minNum: minNum,
+            maxNum: maxNum
         },
         dataType: 'html',
         success: function (response) {
@@ -26,6 +24,7 @@ $("#buttonOne").click(function (e) {
         }
     });
 });
+
 
 
 document.addEventListener("DOMContentLoaded", function () {
