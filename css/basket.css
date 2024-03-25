@@ -24,6 +24,9 @@ header {
     font-family: fontFour;
 }
 
+
+
+
 @font-face {
     font-family: fontOne;
     src: url(../Font/fontOne);
@@ -85,10 +88,27 @@ header {
 .menu li a:hover {
     color: #EF6136;
 }
+
+.menu-toggle {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 0.1875rem;
+    width: 1.5625rem;
+    background-color: black;
+    margin-bottom: 0.3125rem;
+    display: block;
+}
+
 .basketMobile {
     display: none;
 }
-
 .container {
     width: 100%;
     height: auto;
@@ -258,4 +278,130 @@ footer {
     background-color: #EF6136;
     font-size: 17px;
     color: white;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    @font-face {
+        font-family: fontThree;
+        src: url(../Font/fontThree);
+    }
+
+    @font-face {
+        font-family: fontFour;
+        src: url(../Font/fontFour);
+    }
+
+    header {
+        display: flex;
+    }
+
+
+    header .logoInput {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    .logo .text {
+        width: 130px;
+        height: 50px;
+        background-color: black;
+        font-family: fontOne;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 33px;
+        text-transform: uppercase;
+    }
+
+    .menu1 {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(234, 234, 234, 0.96);
+    }
+
+    .menu1.active {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .basketMobile {
+        display: block;
+        font-size: 26px;
+        color: black;
+        transition: .6s;
+    }
+
+    .basketMobile:hover {
+        color: #EF6136;
+    }
+
+    .menu li a {
+        font-size: 27px;
+        color: #EF6136;
+        font-family: fontFour;
+    }
+
+
+    .menu-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu-toggle span:hover {
+        background: #EF6136;
+    }
+
+    .basket {
+        font-size: 22px;
+        display: none;
+    }
+
+
+    #cardDiv{
+        width: 100%;
+    }
+
+
+
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /*gap: 20px;*/
+        text-align: center;
+    }
+
+    footer .menuFooter li a {
+        font-size: 22px;
+    }
 }
