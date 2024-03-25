@@ -14,7 +14,7 @@ include "../admin/admin-server/webSite-server.php";
 </head>
 
 
-<body>
+<body id="body">
 <?php
 include "./header.php";
 ?>
@@ -59,7 +59,7 @@ include "./footer.php";
 <?php
 include "./botButton.php";
 ?>
-
+<script src="../js/mobile.js"></script>
 </body>
 
 </html>

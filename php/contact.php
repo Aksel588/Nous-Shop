@@ -12,9 +12,11 @@ session_start();
     <title>Contact</title>
 </head>
 <body id="body">
+
 <?php
 include "./header.php";
 ?>
+
 <div>
     <div class="newArrivals">
         <div>
