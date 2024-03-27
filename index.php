@@ -17,7 +17,7 @@ $products = getProducts();
     <title>NOUS</title>
 </head>
 
-<body>
+<body id="body">
 <?php
 include "../Nous-Shop/php/header.php";
 ?>
@@ -170,7 +170,7 @@ include "./php/botButton.php";
 ?>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="./js/product.js"></script>
-<!--<script src="./js/script.js"></script>-->
+<script src="./js/mobile.js"></script>
 </body>
 
 </html>

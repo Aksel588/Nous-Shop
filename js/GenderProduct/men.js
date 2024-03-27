@@ -86,3 +86,5 @@ $(document).on('click', '.cart', function (e) {
         }
     });
 });
+
+

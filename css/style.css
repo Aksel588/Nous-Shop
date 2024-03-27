@@ -15,8 +15,6 @@
     src: url(../Font/fontFour);
 }
 
-
-
 header {
     width: 100%;
     height: 65px;
@@ -25,6 +23,7 @@ header {
     justify-content: space-around;
     font-family: fontFour;
 }
+
 
 @font-face {
     font-family: fontOne;
@@ -81,7 +80,6 @@ header {
 .menu li a {
     color: black;
     transition: .7s;
-    cursor: pointer;
 }
 
 
@@ -89,9 +87,27 @@ header {
     color: #EF6136;
 }
 
+.menu-toggle {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 0.1875rem;
+    width: 1.5625rem;
+    background-color: black;
+    margin-bottom: 0.3125rem;
+    display: block;
+}
+
 .basketMobile {
     display: none;
 }
+
 
 .box {
     width: 1300px;
@@ -635,6 +651,168 @@ footer {
 }
 
 
+@media screen and (max-width: 768px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    @font-face {
+        font-family: fontThree;
+        src: url(../Font/fontThree);
+    }
+
+    @font-face {
+        font-family: fontFour;
+        src: url(../Font/fontFour);
+    }
+
+    header {
+        display: flex;
+    }
+
+
+    header .logoInput {
+        display: none;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    .logo .text {
+        width: 130px;
+        height: 50px;
+        background-color: black;
+        font-family: fontOne;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 33px;
+        text-transform: uppercase;
+    }
+
+    .menu1 {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: rgba(234, 234, 234, 0.96);
+    }
+
+    .menu1.active {
+        width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        padding: 30px 0px 30px 0px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .basketMobile {
+        display: block;
+        font-size: 26px;
+        color: black;
+        transition: .6s;
+    }
+
+    .basketMobile:hover {
+        color: #EF6136;
+    }
+
+    .menu li a {
+        font-size: 27px;
+        color: #EF6136;
+        font-family: fontFour;
+    }
+
+
+    .menu-toggle {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .menu-toggle span:hover {
+        background: #EF6136;
+    }
+
+    .basket {
+        font-size: 22px;
+        display: none;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .freeShipping {
+        height: auto;
+    }
+
+    .freeShippingText {
+        font-size: 20px;
+        padding: 0px 70px 0px 70px;
+    }
+
+    .freeShippingBottom {
+        height: auto;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .box .freeShipping .freeShippingBottom button {
+        width: 300px;
+        height: 50px;
+        border: solid 4px white;
+    }
+    .freeShippingImages{
+        display: flex;
+        /*flex-direction: column;*/
+    }
+    .freeShippingImages div{
+        width: 100%;
+        height: auto;
+    }
+    .freeShippingImages div img{
+        width: 100%;
+        background-size: contain;
+    }
+    .freeShippingImages .div{
+        width: 100%;
+        height: auto;
+    }
+    /*.div img {*/
+    /*    width: 100%;*/
+    /*}*/
+
+    footer {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        /*gap: 20px;*/
+        text-align: center;
+    }
+
+    footer .menuFooter li a {
+        font-size: 22px;
+    }
+}
 
 
 
