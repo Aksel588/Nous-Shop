@@ -54,6 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+
 $(document).on('click', '.cart', function (e) {
     e.preventDefault();
     var $click = $(this);
