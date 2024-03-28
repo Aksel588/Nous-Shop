@@ -51,6 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
             btn.style.display = "none";
         }
     });
+
+    btn.addEventListener("click", function () {
+
+        toggleImages(currentImg, currentImg + 9, "block");
+
+        currentImg += 9;
+        if (currentImg >= elWrapper.length) {
+            btn.style.display = "none";
+        }
+    });
 });
 
 
