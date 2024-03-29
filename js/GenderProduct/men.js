@@ -82,6 +82,8 @@ $(document).on('click', '.cart', function (e) {
         },
         success: function (response) {
             console.log("AJAX request successful:");
+            console.log("AJAX request successful:");
+            console.log("AJAX request successful:");
             var updatedCart = JSON.parse(response);
             $("#cartDisplay").html("Cart Items: " + updatedCart.items + " Total Price: " + updatedCart.totalPrice);
         },
