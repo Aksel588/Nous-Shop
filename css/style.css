@@ -794,8 +794,7 @@ footer {
         background-size: contain;
     }
     .freeShippingImages .div{
-        width: 100%;
-        height: auto;
+       display: none;
     }
     /*.div img {*/
     /*    width: 100%;*/
