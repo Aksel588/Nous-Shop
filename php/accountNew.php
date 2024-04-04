@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 ?>
 
 <!DOCTYPE html>
@@ -18,7 +17,7 @@ session_start();
 <div class="materialContainer">
 
 
-    <form method="POST" action="../includes/login.inc.php" class="box">
+    <form method="POST" action="../users/Signup/userSignup.php" class="box">
 
         <div class="title">LOGIN</div>
 
@@ -49,26 +48,26 @@ session_start();
     </form>
 
 
-    <form method="POST" action="../includes/signup.inc.php" class="overbox">
+    <form method="POST" action="../users/Creation/userCreation.php" class="overbox">
         <div class="material-button alt-2"><span class="shape"></span></div>
 
         <div class="title">REGISTER</div>
 
         <div class="input">
             <label for="regname">Username</label>
-            <input type="text" name="uid" id="regname">
+            <input type="text" name="uid" id="regname" class="uid">
             <span class="spin"></span>
         </div>
 
         <div class="input">
             <label for="regpass">Password</label>
-            <input type="password" name="pwd" id="regpass">
+            <input type="password" name="pwd" id="regpass" class="pwd">
             <span class="spin"></span>
         </div>
 
         <div class="input">
             <label for="reregpass">Email</label>
-            <input type="text" name="email" id="reregpass">
+            <input type="text" name="email" id="reregpass" class="email">
             <span class="spin"></span>
         </div>
 
@@ -81,6 +80,7 @@ session_start();
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="../js/accountNew.js"></script>
+<script src="../js/users/userCreation.js"></script>
 </body>
 
 </html>
