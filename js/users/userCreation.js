@@ -14,10 +14,11 @@ $('.next').click(function (e) {
             email: email 
         },
         success: function (response) {
-            console.log(response);
+            window.location.href = '/Nous-Shop/index.php';
+            // alert(response);
         },        
         error: function (xhr, status, error) {
-            console.log(xhr.responseText);
+            console.log("Hi")
         }
     });
 });
